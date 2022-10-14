@@ -1,0 +1,8 @@
+classes/**/*.aux
+classes/**/*.bbl
+classes/**/*.blg
+classes/**/*.lof
+classes/**/*.log
+classes/**/*.lot
+classes/**/*.synctex.gz
+classes/**/*.toc
