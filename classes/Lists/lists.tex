@@ -1,0 +1,55 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Lista numerada
+\begin{enumerate}
+  \item ITEM
+  		\begin{enumerate}
+  			\item subitem
+  			\item subitem
+  				\begin{enumerate}
+  					\item subitem
+  					\item subitem
+  				\end{enumerate}
+  			\item subitem
+  		\end{enumerate}
+  \item ITEM
+  \item ITEM
+  		\begin{enumerate}
+  			\item subitem
+  			\item subitem
+  		\end{enumerate}
+  \item ITEM
+  		\begin{enumerate}
+  			\item subitem
+  				\begin{enumerate}
+  					\item subitem
+  				\end{enumerate}
+  		\end{enumerate}
+  \item ITEM
+\end{enumerate}
+
+Lista não numerada
+
+\begin{itemize}
+	\item ITEM
+	\begin{itemize}
+		\item subitem
+		\item subitem
+		\item subitem
+	\end{itemize}
+	\item ITEM
+	\item ITEM
+		\begin{itemize}
+			\item subitem
+				\begin{itemize}
+					\item subitem
+				\end{itemize}
+		\end{itemize}
+	\item ITEM
+\end{itemize}
+
+\end{document}
