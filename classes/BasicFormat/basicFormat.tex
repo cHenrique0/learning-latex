@@ -1,0 +1,40 @@
+% preambulo - contem informações gerais do arquivo
+\documentclass[a4paper, 12pt]{article} % comando obrigatorio para criação de um documento latex
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry} % pacote de ajuda para configurações das margens
+\usepackage{lipsum} % pacote para criar texto ficticios
+\usepackage[utf8]{inputenc} % pacote para text enconding(acentos e etc)
+
+% corpo do documento - onde fica o texto em si
+\begin{document}
+% \lipsum[2-4]
+1. Inserindo fórmulas matematicas
+
+Equação polinomial do 2º grau
+
+Uma equação na forma $ax^2 + bx + c = d$, com $a \neq 0$ será chamada de equação do 2º grau.
+
+A solução dessa equação é dada por $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+2. Formatando texto
+
+\begin{center}
+Alinhado ao centro
+\end{center}
+
+\begin{flushright}
+Alinhado à direita
+\end{flushright}
+
+\begin{flushleft}
+Alinhado à esquerda
+\end{flushleft}
+
+\textbf{Texto em negrito}
+
+\textit{Texto em itálico}
+
+\underline{Texto sublinhado}
+
+\textbf{\textit{\underline{Os 3 juntos}}}
+
+\end{document}
