@@ -1,0 +1,31 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[portuguese]{babel}
+
+\begin{document}
+
+\begin{enumerate}
+	\item Tabela \ref{tab-derivadas} apresenta derivadas básicas
+	
+	% l - à esquerda, r - à direita, c - ao centro. A quantidade de letras é a quantidade de colunas da tabela.
+	% p{tam} - paragrafo{tamanho do paragrafo}
+	% o tamanho pode ser dado em centimetros: 8cm, 10cm ou em porcentagem: 0.4\textwidth
+	% & separa as colunas, \\ separa as linhas.
+	% | - bordas verticais, \hline - bordas horizontais
+
+	\begin{table}[!htb]
+		\centering % centraliza a tabela
+		\begin{tabular}{|c|c|} % cria a tabela
+			\hline
+			Função & Derivadas \\ \hline
+			$f(x) = x^{n}$ & $f'(x) = nx^{n-1}$ \\ \hline
+			$f(x) = \log_a x$ & $f'(x) = \dfrac{1}{x\ln a}$ \\ \hline
+		\end{tabular}
+		\caption{Tabela de derivadas.}
+		\label{tab-derivadas}
+	\end{table}
+\end{enumerate}
+
+\end{document}
