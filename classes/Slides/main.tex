@@ -14,6 +14,11 @@
 \usepackage{hyperref}
 \usepackage{physics}
 \setbeamercovered{transparent} % deixa os itens das listas transparentes(ver o comando de marcar o item ativo)
+\beamertemplatenavigationsymbolsempty % tira os atalhos de navegação do slide(canto inferiro direito)
+
+% Páginas
+%\setbeamerfont{page number in head/foot}{size=\large} % tamanho da fonte grande
+\setbeamertemplate{page number in head/foot}[totalframenumber] % framenumber - só a pagina / totalframenumber - pagina atual/total de paginas
 
 % Capa
 \title{Criando Slides - Aula 1}
@@ -23,11 +28,18 @@
 % Inicio do documento
 \begin{document}
 
+% Inserindo a capa
 \maketitle
 
+% Sumário
+\begin{frame}
+	\tableofcontents %[pausesections] % mesmo efeito dos itens na seção 2
+\end{frame}
+
+% Conteudo
 \section{Seção 1}
 	% Cria um slide
-	\begin{frame}{Frame 1 - Seção 1}
+	\begin{frame}{Seção 1 - Frame 1}
 		% Lista de itens
 		\begin{itemize}
 			\item[a] Item 1
@@ -36,13 +48,13 @@
 		\end{itemize}
 	\end{frame}
 	
-	\begin{frame}{Frame 2 - Seção 1}
+	\begin{frame}{Seção 1 - Frame 2}
 		Slide 2
 	\end{frame}
 
 \section{Seção 2}
 
-	\begin{frame}{Frame 1 - Seção 2}
+	\begin{frame}{Seção 2 - Frame 1}
 		\begin{enumerate} [<+- | alert@+>] % deixa o item ativo em vermelho
 			\item Item
 			\item Item
