@@ -16,6 +16,7 @@
 \setbeamercovered{transparent} % deixa os itens das listas transparentes(ver o comando de marcar o item ativo)
 \beamertemplatenavigationsymbolsempty % tira os atalhos de navegação do slide(canto inferiro direito)
 \renewcommand{\footnotesize}{\tiny} % configuração das notas de rodapé
+\usepackage{lipsum} % lorem
 
 % Páginas
 %\setbeamerfont{page number in head/foot}{size=\large} % tamanho da fonte grande
@@ -50,7 +51,7 @@
 	\end{frame}
 	
 	\begin{frame}{Seção 1 - Frame 2}
-		Slide 2
+		\lipsum[1-1]
 	\end{frame}
 
 \section{Seção 2}
@@ -62,6 +63,19 @@
 			\item Item
 		\end{enumerate}
 	\end{frame}
+	
+\section{Seção 3}
+	\begin{frame}{Seção 3 - Frame 1}
+		% Separando em colunas
+		\begin{columns}
+			\column{0.5\textwidth}
+			\lipsum[1-1]
+			
+			\column{0.5\textwidth}
+			\lipsum[1-1]
+		\end{columns}
+	\end{frame}
+
 
 \end{document}
 
