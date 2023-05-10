@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=149]{beamer} % ratio - 1610, 149, 54, 43, 32. Padrão: 43
 
 % Tema do slide
 \usetheme{Copenhagen}
@@ -15,6 +15,7 @@
 \usepackage{physics}
 \setbeamercovered{transparent} % deixa os itens das listas transparentes(ver o comando de marcar o item ativo)
 \beamertemplatenavigationsymbolsempty % tira os atalhos de navegação do slide(canto inferiro direito)
+\renewcommand{\footnotesize}{\tiny} % configuração das notas de rodapé
 
 % Páginas
 %\setbeamerfont{page number in head/foot}{size=\large} % tamanho da fonte grande
@@ -33,7 +34,7 @@
 
 % Sumário
 \begin{frame}
-	\tableofcontents %[pausesections] % mesmo efeito dos itens na seção 2
+	\tableofcontents %[pausesections] % mesmo efeito dos itens na seção 2	
 \end{frame}
 
 % Conteudo
@@ -42,9 +43,9 @@
 	\begin{frame}{Seção 1 - Frame 1}
 		% Lista de itens
 		\begin{itemize}
-			\item[a] Item 1
+			\item[a] Item 1 \footnote{Nota de rodapé}
 			\item Item 2
-			\item Item 3
+			\item Item 3 \footnote[9]{Nota de rodapé}
 		\end{itemize}
 	\end{frame}
 	
