@@ -22,26 +22,47 @@
 %\usefonttheme{default} % fontes: structurebold, structuresmallcapsserif, serif e default
 %\usecolortheme{beaver} % altera as cores do tema: default, beaver, beetle, seahorse, wolverine, lily, albatross, crane
 
-
 % Páginas
 %\setbeamerfont{page number in head/foot}{size=\large} % tamanho da fonte grande
 \setbeamertemplate{page number in head/foot}[totalframenumber] % framenumber - só a pagina / totalframenumber - pagina atual/total de paginas
 
 % Capa
 \title{Criando Slides - Aula 1}
-\author{Claudio Henrique}
-\date{Maio 2023}
+\author[Claudio Henrique]{Claudio Henrique Velozo Alexandre}
+\institute{Universidade Federal do Maranhão}
+\date{\today}
 
 % Inicio do documento
 \begin{document}
 
 % Inserindo a capa
-\maketitle
+% Forma 1
+\frame{\maketitle} 
+%\frame{\titlepage}
+
+% Forma 2
+%\begin{frame}
+%	\maketitle
+%\end{frame}
+
+% Forma 3
+%\maketitle
 
 % Sumário
-\begin{frame}
-	\tableofcontents %[pausesections] % mesmo efeito dos itens na seção 2	
-\end{frame}
+% Forma 1
+%\begin{frame}{Sumário}
+%	\tableofcontents %[pausesections] % mesmo efeito dos itens na seção 2	
+%\end{frame}
+
+% Forma 2
+%\frame{\tableofcontents}
+
+% Mostra o sumário a cada inicio de seção
+\AtBeginSection[]{
+	\begin{frame}{Sumário}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
 
 % Conteudo
 \section{Seção 1}
