@@ -1,6 +1,6 @@
-% ratio - 1610, 149, 54, 43, 32. Padrão: 43
+% aspectratio - 1610, 149, 54, 43, 32. Padrão: 43
 % tamanho da fonte - 8pt, 9pt, 10pt, 11pt(padrão), 12pt, 14pt, 17pt, 20pt
-\documentclass[aspectratio=149]{beamer}
+\documentclass[]{beamer}
 
 % Tema do slide
 \usetheme{Copenhagen}
@@ -117,6 +117,32 @@
 			Texto
 		\end{exampleblock}
 	\end{frame}
+
+% Referencias Bibliográficas
+\begin{frame}{Referencias Bibliográficas}
+	\begin{thebibliography}{4} % 4 é a quantidade de referencias
+		\beamertemplatebookbibitems % marcador de livro
+		\bibitem{sobrenome} [1] Nome
+		\newblock{\em Titulo}.
+		\newblock{Editora $2001$}
+		
+		\setbeamertemplate{bibliography item}[triangle] % marcador triangulo
+		\bibitem{sobrenome} [2] Nome
+		\newblock{\em Titulo}.
+		\newblock{Editora $2002$}
+		
+		\beamertemplateonlinebibitems % marcador de internet
+		\bibitem{sobrenome} [3] Nome
+		\newblock{\em Titulo}.
+		\newblock{$<Link>$, acessado em...}
+		
+		\beamertemplatearticlebibitems % marcador de artigo
+		\bibitem{sobrenome} [4] Nome
+		\newblock{\em Titulo}.
+		\newblock{Editora $2004$}
+	\end{thebibliography}
+\end{frame}
+
 \end{document}
 
 
